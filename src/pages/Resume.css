@@ -1,0 +1,209 @@
+/* ===========================
+   LIGHT MODE COLORS
+   =========================== */
+:root {
+    --bg-color: #f5f8ff;
+    --card-bg: #ffffff;
+    --left-bg: #f0f3ff;
+    --text-color: #1a1a1a;
+    --heading-color: #0a66ff;
+    --highlight: #0a66ff;
+    --shadow-color: rgba(0, 0, 0, 0.15);
+}
+
+/* ===========================
+   DARK MODE COLORS
+   =========================== */
+.dark-mode {
+    --bg-color: #294675;
+    --card-bg: #336fc2;
+    --left-bg: #1f242d;
+    --text-color: #dbe2ff;
+    --heading-color: #d8ff4d;
+    --highlight: #4dabff;
+    --shadow-color: rgba(0, 0, 0, 0.45);
+}
+
+/* ===========================
+   BASE PAGE STYLES
+   =========================== */
+.resume-page {
+    padding: 50px 20px;
+    display: flex;
+    justify-content: center;
+    background: var(--bg-color);
+    transition: 0.3s ease;
+}
+
+.resume-card {
+    width: 100%;
+    max-width: 1000px;
+    background: var(--card-bg);
+    display: flex;
+    gap: 25px;
+    padding: 25px;
+    border-radius: 18px;
+    box-shadow: 0 15px 40px var(--shadow-color);
+    transition: 0.3s ease;
+}
+
+/* LEFT COLUMN */
+.resume-left {
+    width: 30%;
+    background: var(--left-bg);
+    padding: 20px;
+    border-radius: 12px;
+    text-align: center;
+    transition: 0.3s ease;
+}
+
+.resume-photo {
+    width: 100%;
+    border-radius: 12px;
+    margin-bottom: 20px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+}
+
+/* RIGHT COLUMN */
+.resume-right {
+    width: 70%;
+    color: var(--text-color);
+}
+
+/* HEADER */
+.resume-header h1,
+.resume-header h2 {
+    color: var(--text-color);
+}
+
+.resume-header h1 {
+    font-size: 2rem;
+}
+
+.resume-header h2 {
+    font-size: 1.2rem;
+    color: var(--heading-color);
+}
+
+.resume-header {
+    padding-bottom: 12px;
+    border-bottom: 2px solid var(--highlight);
+    background: linear-gradient(90deg, transparent, var(--highlight) 20%, transparent);
+    padding: 10px 0;
+}
+
+/* SECTION TITLES */
+section h3,
+.left-box h3 {
+    color: var(--heading-color);
+}
+
+/* DOWNLOAD BUTTON */
+.download-btn {
+    background: var(--highlight);
+    border: none;
+    padding: 10px 16px;
+    display: inline-flex;
+    gap: 8px;
+    color: white;
+    border-radius: 10px;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+
+.download-btn:hover {
+    filter: brightness(1.2);
+}
+
+/* ================================
+   📱 RESPONSIVE DESIGN
+   ================================ */
+
+/* TABLET — 900px and below */
+@media (max-width: 900px) {
+
+    .resume-card {
+        flex-direction: column;
+        padding: 22px;
+        gap: 20px;
+    }
+
+    .resume-left,
+    .resume-right {
+        width: 100%;
+    }
+
+    .resume-photo {
+        width: 60%;
+        margin: 0 auto 20px auto;
+    }
+
+    .left-box ul {
+        padding-left: 0;
+        text-align: center;
+    }
+
+    .resume-header h1 {
+        text-align: center;
+        font-size: 1.8rem;
+    }
+
+    .resume-header h2 {
+        text-align: center;
+    }
+
+    .download-btn {
+        display: flex;
+        justify-content: center;
+        margin: 15px auto;
+    }
+}
+
+/* MOBILE — 600px and below */
+@media (max-width: 600px) {
+
+    .resume-page {
+        padding: 25px 10px;
+    }
+
+    .resume-card {
+        padding: 18px;
+        border-radius: 15px;
+    }
+
+    .resume-photo {
+        width: 75%;
+    }
+
+    .resume-header h1 {
+        font-size: 1.6rem;
+    }
+
+    section h3 {
+        font-size: 1.1rem;
+    }
+
+    section p,
+    section ul {
+        font-size: 0.95rem;
+        line-height: 1.5;
+    }
+}
+
+/* SMALL DEVICES — 400px and below */
+@media (max-width: 400px) {
+
+    .resume-card {
+        padding: 14px;
+    }
+
+    .resume-photo {
+        width: 85%;
+    }
+
+    .download-btn {
+        width: 100%;
+        padding: 12px;
+        font-size: 0.95rem;
+    }
+}

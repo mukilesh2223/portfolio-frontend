@@ -1,0 +1,134 @@
+.home-container {
+  padding: 60px 40px;
+  max-width: 1100px;
+  margin: auto;
+  padding-top: 80px;
+}
+
+/* HERO GRID */
+.hero {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+/* LEFT CONTENT */
+.hero-left {
+  flex: 1;
+  min-width: 300px;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #ad4545;
+}
+
+.hero-name {
+  color: #0077ff;
+}
+
+.hero-title {
+  font-size: 1.6rem;
+  margin-top: 10px;
+  color: #444;
+}
+
+.hero-desc {
+  margin-top: 20px;
+  font-size: 1.15rem;
+  color: #555;
+  line-height: 1.7;
+}
+
+/* BUTTONS */
+.hero-buttons {
+  margin-top: 30px;
+  display: flex;
+  gap: 15px;
+}
+
+.btn {
+  padding: 12px 28px;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+.primary-btn {
+  background: #0077ff;
+  color: #fff;
+}
+
+.primary-btn:hover {
+  background: #005fcc;
+}
+
+.secondary-btn {
+  border: 2px solid #0077ff;
+  color: #0077ff;
+}
+
+.secondary-btn:hover {
+  background: #e9f3ff;
+}
+
+/* RIGHT SIDE — IMAGE */
+.hero-right {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  min-width: 280px;
+}
+
+.hero-img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  border: 5px solid #ffffff;
+  transition: 0.3s ease;
+}
+
+.hero-img:hover {
+  transform: scale(1.05);
+}
+
+/* SKILLS TAG BANNER */
+.skills-banner {
+  margin-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+}
+
+.skills-banner span {
+  background: #f1f3f7;
+  padding: 8px 18px;
+  border-radius: 20px;
+  color: #444;
+  font-size: 0.95rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.08);
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .hero {
+    text-align: center;
+  }
+
+  .hero-buttons {
+    justify-content: center;
+  }
+
+  .hero-img {
+    width: 240px;
+    height: 240px;
+  }
+}
